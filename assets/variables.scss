@@ -1,4 +1,45 @@
 // Ref: https://github.com/nuxt-community/vuetify-module#customvariables
-//
-// The variables you want to modify
-// $font-size-root: 20px;
+
+// Шрифты
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('~@/assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+// Цвета
+$primary-color: #4793FF;
+$secondary-color: rgba(71, 147, 255, 0.2);
+$background-color: #FFFFFF;
+$text-color: rgba(245, 243, 243, 0.92);
+$subtitle: #000000;
+$text-color-gray: rgba(147, 156, 176, 1);
+
+// Типография
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-size-base: 16px;
+$font-size-large: 23px;
+$font-size-extra-large: 88px;
+$line-height-base: 1.5;
+
+// Блоки
+$padding-small: 8px;
+$padding-medium: 16px;
+$padding-large: 24px;
+
+// Граница
+$border-width: 1px;
+$border-color: #dee2e6;
+$border-radius-10: 10px;
+$border-radius-20: 20px;
+
+// Брейкпоинты дисплеев
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1368px;
+$breakpoint-xl: 1960px;

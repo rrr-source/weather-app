@@ -1,0 +1,16 @@
+// Определяю основные переменные для тёмной и светлой темы
+$dark-background-color: #171717;
+$dark-text-color: #FFFFFF;
+$light-background-color: #FFFFFF;
+$light-text-color: #171717;
+
+// Применяю темы в зависимости от условий
+body[data-theme='dark'] {
+  background-color: $dark-background-color;
+  color: $dark-text-color;
+}
+
+body[data-theme='light'] {
+  background-color: $light-background-color;
+  color: $light-text-color;
+}

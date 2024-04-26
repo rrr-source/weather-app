@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+const path = require('path');
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -21,7 +22,9 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    '~/assets/theme.scss'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -39,8 +42,6 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
@@ -49,13 +50,6 @@ export default {
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
-  },
-
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      lang: 'en',
-    },
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -77,6 +71,12 @@ export default {
           success: colors.green.accent3,
         },
       },
+    },
+  },
+
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname),
     },
   },
 
